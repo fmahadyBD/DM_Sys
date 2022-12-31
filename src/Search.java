@@ -1,15 +1,14 @@
 import java.util.Scanner;
 
-
 public class Search {
 
-int target;
-    public void  search(){
+    int target;
 
-     
+    public void search() {
+
         System.out.println("Wecome to Sorting System");
 
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         int size;
         int b;
@@ -19,55 +18,43 @@ int target;
         size = sc.nextInt();
         int a[] = new int[size];
 
-        while(true){
+        while (true) {
             System.out.println("Enter The your chooese:\n");
             System.out.println("Prees 1 for Liniar\n");
             System.out.println("Press 2 for Bainarary\n");
             System.out.println("Press 3 for Return to Home\n");
-         
-               b=sc.nextInt();
-               System.out.println("Enter your target Value:\n");
-               target=sc.nextInt();
-            
-            switch(b)
-            {
-                    case 1:
-                   Liniar(a);
-                   
-                                    break;
-                    case 2:
+
+            b = sc.nextInt();
+            System.out.println("Enter your target Value:\n");
+            target = sc.nextInt();
+
+            switch (b) {
+                case 1:
+                    Liniar(a);
+
+                    break;
+                case 2:
                     Bainarary(a);
-                                    break;
-                    case 3: 
+                    break;
+                case 3:
 
-                   
-                                    
-                                    break;
-   
+                    break;
 
-                         
-                    default:
-                                  
-                                 
-                                    break;
+                default:
+
+                    break;
             }
             sc.close();
 
-
-
-    }
-    
+        }
 
     }
 
+    // ____________
 
-    //____________
-
-    public int Liniar(int[]numbers){
+    public int Liniar(int[] numbers) {
 
         System.out.println("___________________Welcome to Liniar Search Method.________________________");
-
-
 
         int index = -1; // index of the target element
         for (int i = 0; i < numbers.length; i++) {
@@ -86,10 +73,10 @@ int target;
         return 0;
 
     }
-    public int Bainarary(int []numbers){
+
+    public int Bainarary(int[] numbers) {
         System.out.println("___________________Welcome to Bainarary Search Method.________________________");
-  
-  
+
         int low = 0; // start of the search space
         int high = numbers.length - 1; // end of the search space
 
@@ -108,10 +95,9 @@ int target;
         if (low > high) {
             System.out.println("Element not found");
         }
-  
+
         return 0;
 
     }
-
 
 }
