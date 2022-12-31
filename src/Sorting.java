@@ -2,24 +2,21 @@ import java.util.Scanner;
 
 public class Sorting {
 
-    int max = 0;
-    int size;
-
     public int sort() throws Exception {
-
+        int size;
         int b;
-        int a[] = new int[size];
         System.out.println("Wecome to Sorting System");
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the array size: ");
         size = sc.nextInt();
+        int a[] = new int[size];
 
         System.out.println("Enter the array Element:");
         for (int i = 0; i < size; i++) {
             a[i] = sc.nextInt();
         }
 
-        while (true) {
+
             System.out.println("Enter The your chooese that you want to oparation:\n");
             System.out.println("Prees 1 for Buubble\n");
             System.out.println("Press 2 for count\n");
@@ -45,11 +42,7 @@ public class Sorting {
                 case 4:
                     Insersiton(a);
                     break;
-                case 5:
 
-                    App app = new App();
-                    app.main(null);
-                    break;
 
                 default:
 
@@ -57,10 +50,11 @@ public class Sorting {
             }
 
             sc.close();
+            return 0;
 
         }
 
-    }
+    
 
     // ____________
 
@@ -90,7 +84,7 @@ public class Sorting {
     }
 
     public int count(int[] a) throws InterruptedException {
-
+        int max = 0;
         System.out.println("___________________Welcome to CounSort Method.________________________");
         Thread.sleep(5000);
 
@@ -136,7 +130,7 @@ public class Sorting {
 
     }
 
-    public int selection(int []numbers) throws InterruptedException {
+    public int selection(int[] numbers) throws InterruptedException {
         System.out.println("___________________Welcome to SelectionSort Method.________________________");
         for (int i = 0; i < numbers.length - 1; i++) {
             // find the minimum element in the unsorted part of the array
@@ -163,9 +157,9 @@ public class Sorting {
     }
 
     public int Insersiton(int[] numbers) throws InterruptedException {
- 
+
         System.out.println("___________________Welcome to InsersitonSort Method.________________________");
-        
+
         for (int i = 1; i < numbers.length; i++) {
             // insert numbers[i] into the sorted part of the array
             int key = numbers[i];
@@ -182,12 +176,10 @@ public class Sorting {
             System.out.print(i + " ");
         }
         System.out.println();
-        
+
         Thread.sleep(5000);
         return 0;
 
-
     }
-
 
 }
