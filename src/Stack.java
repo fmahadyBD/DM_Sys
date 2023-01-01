@@ -4,8 +4,9 @@ import java.util.Stack;
 public class Stacks {
     /**
      * @return
+     * @throws Exception
      */
-    public  int stack() {
+    public  int stack() throws Exception {
         int a,u;
         Stack<Integer> stack = new Stack<>();
         Scanner sc=new Scanner(System.in);
@@ -36,7 +37,8 @@ public class Stacks {
 
                     break;
                 case 4:
-                return 0;
+                App obj=new App();
+                App.main(new String[]{});
  
 
                 default:
