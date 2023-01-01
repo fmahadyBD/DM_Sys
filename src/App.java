@@ -8,18 +8,18 @@ public class App {
     public static void main(String[] args) throws Exception {
 
         int a;
-        System.out.println("Wecome to The Data Structure project");
+        System.out.println("\n\n\nWecome to The Data Structure project");
         System.out.println("Name of Developer:Mahady Hasan Fahim");
         Scanner sc = new Scanner(System.in);
 
-        while (true) {
+
             System.out.println("Enter The your chooese:\n");
             System.out.println("Prees 1 for Sorting\n");
             System.out.println("Press 2 for Searching\n");
             System.out.println("Press 3 for stack\n");
             System.out.println("Press 4 for Queue\n");
             System.out.println("Press 5 for LinkedList\n");
-            System.out.println("Press 6 for Tree\n");
+            System.out.println("Press 6 for Hash Map\n");
 
             a = sc.nextInt();
 
@@ -35,20 +35,21 @@ public class App {
                     break;
                 case 3:
 
-                    Stack objectctStack = new Stack();
+                Stacks objectctStack = new Stacks();
                     objectctStack.stack();
 
                     break;
                 case 4:
-                    Queue objQueue = new Queue();
+                Queues objQueue = new Queues();
                     objQueue.queue();
                     break;
                 case 5:
-                    LinkedList obLinkedList = new LinkedList();
+                llist obLinkedList = new llist();
                     obLinkedList.linkedlist();
                     break;
                 case 6:
-
+                hmap obHashmap=new hmap();
+                obHashmap.hash();
                     break;
                 case 7:
 
@@ -62,4 +63,4 @@ public class App {
 
         }
     }
-}
+
