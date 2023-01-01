@@ -20,6 +20,7 @@ public class App {
             System.out.println("Press 4 for Queue\n");
             System.out.println("Press 5 for LinkedList\n");
             System.out.println("Press 6 for Hash Map\n");
+            System.out.println("Press 7 for Graph\n");
 
             a = sc.nextInt();
 
@@ -52,7 +53,8 @@ public class App {
                 obHashmap.hash();
                     break;
                 case 7:
-
+                Graph obGraph=new Graph();
+                obGraph.grp();
                     break;
 
                 default:
