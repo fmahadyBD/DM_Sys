@@ -5,13 +5,11 @@ public class Search {
     int target;
 
     public void search() throws Exception {
-
-        System.out.println("Wecome to Sorting System");
-
-        Scanner sc = new Scanner(System.in);
-
         int size;
         int b;
+
+        System.out.println("Wecome to Sorting System");
+        Scanner sc = new Scanner(System.in);
         System.out.println("Wecome to Sorting System");
 
         System.out.println("Enter the array size: ");
@@ -23,8 +21,8 @@ public class Search {
             System.out.println("Prees 1 for Liniar\n");
             System.out.println("Press 2 for Bainarary\n");
             System.out.println("Press 3 for Return to Home\n");
-
             b = sc.nextInt();
+
             System.out.println("Enter your target Value:\n");
             target = sc.nextInt();
 
@@ -37,8 +35,8 @@ public class Search {
                     Bainarary(a);
                     break;
                 case 3:
-                App obj=new App();
-                App.main(new String[]{});
+                    App obj = new App();
+                    App.main(new String[] {});
                     break;
 
                 default:
@@ -50,8 +48,6 @@ public class Search {
         }
 
     }
-
-    // ____________
 
     public int Liniar(int[] numbers) {
 
@@ -78,18 +74,18 @@ public class Search {
     public int Bainarary(int[] numbers) {
         System.out.println("___________________Welcome to Bainarary Search Method.________________________");
 
-        int low = 0; // start of the search space
-        int high = numbers.length - 1; // end of the search space
+        int low = 0;
+        int high = numbers.length - 1;
 
         while (low <= high) {
-            int mid = low + (high - low) / 2; // midpoint of the search space
+            int mid = low + (high - low) / 2;
             if (numbers[mid] == target) {
                 System.out.println("Element found at index " + mid);
                 break;
             } else if (numbers[mid] < target) {
-                low = mid + 1; // search in the right half of the search space
+                low = mid + 1;
             } else {
-                high = mid - 1; // search in the left half of the search space
+                high = mid - 1;
             }
         }
 
