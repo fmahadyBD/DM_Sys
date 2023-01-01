@@ -4,7 +4,7 @@ public class Search {
 
     int target;
 
-    public void search() {
+    public void search() throws Exception {
 
         System.out.println("Wecome to Sorting System");
 
@@ -37,7 +37,8 @@ public class Search {
                     Bainarary(a);
                     break;
                 case 3:
-
+                App obj=new App();
+                App.main(new String[]{});
                     break;
 
                 default:
